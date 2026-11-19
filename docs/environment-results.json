@@ -1,0 +1,89 @@
+{
+  "time": "2026-11-16T14:45:16.652277+00:00",
+  "kernel": "6.18.33.2-microsoft-standard-WSL2",
+  "status": "passed",
+  "checks": {
+    "toolchain": {
+      "status": "passed",
+      "detail": {
+        "go": "go version go1.26.8 linux/amd64",
+        "clang": "Ubuntu clang version 21.1.8 (6ubuntu1)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/lib/llvm-21/bin",
+        "bpftool": "bpftool v7.7.0\nusing libbpf v1.7\nfeatures:",
+        "iproute2": "ip utility, iproute2-6.19.0, libbpf 1.6.3",
+        "iptables": "iptables v1.8.11 (nf_tables)"
+      }
+    },
+    "btf": {
+      "status": "passed",
+      "detail": "6677359 bytes"
+    },
+    "cgroup": {
+      "status": "passed",
+      "detail": "cgroup2fs"
+    },
+    "kvm": {
+      "status": "passed",
+      "detail": "API=12; KVM_CREATE_VM succeeded"
+    },
+    "go_build_run": {
+      "status": "passed",
+      "detail": "compiled and executed Linux amd64 binary"
+    },
+    "bpf_compile": {
+      "status": "passed",
+      "detail": "Clang emitted BPF ELF with BTF"
+    },
+    "routed_veth": {
+      "status": "passed",
+      "detail": "two /32 endpoints; bidirectional ping; TTL=63"
+    },
+    "vxlan_device": {
+      "status": "passed",
+      "detail": "isolated VXLAN device creation succeeded; tunnel traffic not tested"
+    },
+    "bpf_load": {
+      "status": "passed",
+      "detail": "verifier accepted TC programs, Map, FIB and CT kfunc references"
+    },
+    "ct_fib_execution": {
+      "status": "passed",
+      "detail": {
+        "packets": 4,
+        "ct_miss": 3,
+        "ct_hit": 0,
+        "ct_error": 0,
+        "fib_calls": 3,
+        "fib_success": 3
+      }
+    },
+    "tc_egress_drop": {
+      "status": "passed",
+      "detail": "Linux-routed packets blocked, then restored after filter removal"
+    },
+    "cleanup": {
+      "status": "passed",
+      "detail": "all experiment namespaces and private bpffs removed"
+    }
+  },
+  "helper_availability": {
+    "bpf_redirect": true,
+    "bpf_fib_lookup": true,
+    "bpf_l3_csum_replace": true,
+    "bpf_skb_store_bytes": true,
+    "bpf_skb_load_bytes": true,
+    "bpf_skb_pull_data": true
+  },
+  "ipam": {
+    "status": "passed",
+    "plugin": "containernetworking/plugins v1.10.0 host-local",
+    "cni_version": "1.0.0",
+    "addresses": [
+      "10.244.199.2/29",
+      "10.244.199.3/29"
+    ],
+    "duplicate_del": "passed",
+    "leases_after_del": 0
+  },
+  "kubectl_sha256": "c04487523e7aa7d1493f7808174c899db93d7a9cf57531420cd76b9bd415f8f4",
+  "full_project_acceptance": "not yet executed"
+}

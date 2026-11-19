@@ -1,0 +1,79 @@
+general protection fault, probably for non-canonical address 0x80ffffd377c00129: 0000 [#1] SMP NOPTI
+[ 3668.100200] CPU: 1 UID: 0 PID: 1 Comm: systemd Not tainted 7.0.0-43-generic #43-Ubuntu PREEMPT(lazy) 
+[ 3668.101291] Hardware name: QEMU Ubuntu 26.04 PC (i440FX + PIIX, 1996), BIOS 1.17.0-debian-1.17.0-1ubuntu1 04/01/2014
+[ 3668.102437] RIP: 0010:path_is_under+0x50/0x90
+[ 3668.102889] Code: 8b 7c 24 08 48 39 f0 74 50 48 89 c1 48 83 e8 20 eb 15 0f 1f 84 00 00 00 00 00 48 8d 48 20 48 8b 7a 18 48 39 f1 74 32 48 89 c2 <48> 8b 40 10 48 39 d0 75 e7 48 39 ce 74 21 31 db 48 c7 c7 44 b8 e0
+[ 3668.105183] RSP: 0018:ffffd377c00138e8 EFLAGS: 00010282
+[ 3668.105907] RAX: 80ffffd377c00119 RBX: ffffd377c0013959 RCX: 80ffffd377c00139
+[ 3668.106607] RDX: 80ffffd377c00119 RSI: b000000000000000 RDI: 04ffff8e2c44ec81
+[ 3668.107250] RBP: ffffd377c00138f8 R08: 0000000000000000 R09: 0000000000000000
+[ 3668.108004] R10: 0000000000000000 R11: 0000000000000000 R12: ffffd377c0013939
+[ 3668.108738] R13: ffffd377c0013b04 R14: ffffd377c00139d0 R15: ffff8e2c44ec8180
+[ 3668.109855] FS:  00007b87be8e9640(0000) GS:ffff8e2ced4f7000(0000) knlGS:0000000000000000
+[ 3668.110677] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[ 3668.111262] CR2: 00005c3940e23828 CR3: 0000000101394002 CR4: 0000000000372ef0
+[ 3668.112027] Call Trace:
+[ 3668.112471]  <TASK>
+[ 3668.113079]  complete_walk+0x9c/0xc0
+[ 3668.113723]  do_open+0x1b3/0x400
+[ 3668.114106]  ? path_init+0x204/0x490
+[ 3668.114520]  path_openat+0x113/0x290
+[ 3668.115083]  ? terminate_walk+0xd0/0x120
+[ 3668.115516]  do_file_open+0xdf/0x1a0
+[ 3668.116128]  do_sys_openat2+0x7a/0xe0
+[ 3668.116815]  __x64_sys_openat+0x5f/0xa0
+[ 3668.117267]  x64_sys_call+0x1f4c/0x2390
+[ 3668.117734]  do_syscall_64+0x105/0x580
+[ 3668.118463]  ? do_syscall_64+0x140/0x580
+[ 3668.118908]  ? mod_memcg_state+0xe7/0x2a0
+[ 3668.119599]  ? arch_exit_to_user_mode_prepare.isra.0+0xd/0xe0
+[ 3668.120578]  ? obj_cgroup_uncharge_pages+0x80/0x100
+[ 3668.121334]  ? refill_obj_stock+0x149/0x270
+[ 3668.122022]  ? refill_obj_stock+0x149/0x270
+[ 3668.122402]  ? __memcg_slab_free_hook+0x113/0x180
+[ 3668.122884]  ? kmem_cache_free+0x266/0x3f0
+[ 3668.123489]  ? refill_obj_stock+0x149/0x270
+[ 3668.123994]  ? __memcg_slab_free_hook+0x113/0x180
+[ 3668.124490]  ? kmem_cache_free+0x266/0x3f0
+[ 3668.125028]  ? fput_close_sync+0x40/0xc0
+[ 3668.125641]  ? __fput+0x1a2/0x2d0
+[ 3668.126019]  ? __fput+0x1a2/0x2d0
+[ 3668.126539]  ? fput_close_sync+0x40/0xc0
+[ 3668.127179]  ? __x64_sys_close+0x3e/0x90
+[ 3668.127964]  ? arch_exit_to_user_mode_prepare.isra.0+0xd/0xe0
+[ 3668.128766]  ? do_syscall_64+0x140/0x580
+[ 3668.129327]  ? arch_exit_to_user_mode_prepare.isra.0+0xd/0xe0
+[ 3668.130117]  ? do_syscall_64+0x140/0x580
+[ 3668.131381]  ? arch_exit_to_user_mode_prepare.isra.0+0xd/0xe0
+[ 3668.132604]  ? do_syscall_64+0x140/0x580
+[ 3668.133984]  ? do_syscall_64+0x140/0x580
+[ 3668.135571]  ? sysvec_apic_timer_interrupt+0x54/0xd0
+[ 3668.137112]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+[ 3668.138278] RIP: 0033:0x7b87bdca03e6
+[ 3668.139417] Code: 47 ba 04 00 00 00 48 8b 05 1f 1a 17 00 64 89 10 48 c7 c2 ff ff ff ff c9 48 89 d0 c3 0f 1f 84 00 00 00 00 00 48 8b 45 10 0f 05 <48> 89 c2 48 3d 00 f0 ff ff 77 0f c9 48 89 d0 c3 66 2e 0f 1f 84 00
+[ 3668.141835] RSP: 002b:00007ffdafa67e40 EFLAGS: 00000202 ORIG_RAX: 0000000000000101
+[ 3668.144120] RAX: ffffffffffffffda RBX: 00005c3940eb8710 RCX: 00007b87bdca03e6
+[ 3668.145886] RDX: 0000000000080000 RSI: 00005c3940eb7ff0 RDI: ffffffffffffff9c
+[ 3668.147585] RBP: 00007ffdafa67e50 R08: 0000000000000000 R09: 0000000000000000
+[ 3668.149035] R10: 0000000000000000 R11: 0000000000000202 R12: 0000000000000008
+[ 3668.149934] R13: 00007b87be36a6ee R14: 00007b87be36a6ee R15: 00007b87be36a6ee
+[ 3668.151771]  </TASK>
+[ 3668.152692] Modules linked in: ib_core vxlan ip6_udp_tunnel udp_tunnel tcp_diag udp_diag inet_diag nf_conntrack_netlink cls_bpf sch_ingress veth dummy ipt_REJECT nf_reject_ipv4 xt_addrtype xt_nat xt_tcpudp xt_MASQUERADE xt_mark xt_nfacct nfnetlink_acct xt_conntrack xt_comment nft_chain_nat nft_compat nf_tables iptable_filter iptable_nat ip_tables x_tables nf_nat br_netfilter bridge stp llc nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 overlay qrtr nfnetlink isofs binfmt_misc intel_rapl_msr intel_rapl_common intel_uncore_frequency_common intel_pmc_core pmt_telemetry pmt_discovery pmt_class intel_pmc_ssram_telemetry intel_vsec nls_iso8859_1 kvm_intel ppdev kvm irqbypass rapl parport_pc vga16fb parport vgastate i2c_piix4 bochs i2c_smbus input_leds joydev mac_hid sch_fq_codel efi_pstore vmw_vsock_virtio_transport vmw_vsock_virtio_transport_common vsock psmouse ghash_clmulni_intel floppy serio_raw pata_acpi cfg80211 dm_mirror dm_region_hash dm_log be2iscsi bnx2i cnic uio cxgb4i cxgb4 tls cxgb3i cxgb3 mdio libcxgbi libcxgb
+[ 3668.152806]  qla4xxx iscsi_boot_sysfs iscsi_tcp libiscsi_tcp libiscsi scsi_transport_iscsi msr dm_multipath dmi_sysfs qemu_fw_cfg virtiofs autofs4 aesni_intel
+[ 3668.166733] ---[ end trace 0000000000000000 ]---
+[ 3668.168211] RIP: 0010:path_is_under+0x50/0x90
+[ 3668.168434] Code: 8b 7c 24 08 48 39 f0 74 50 48 89 c1 48 83 e8 20 eb 15 0f 1f 84 00 00 00 00 00 48 8d 48 20 48 8b 7a 18 48 39 f1 74 32 48 89 c2 <48> 8b 40 10 48 39 d0 75 e7 48 39 ce 74 21 31 db 48 c7 c7 44 b8 e0
+[ 3668.168748] RSP: 0018:ffffd377c00138e8 EFLAGS: 00010282
+[ 3668.168968] RAX: 80ffffd377c00119 RBX: ffffd377c0013959 RCX: 80ffffd377c00139
+[ 3668.169803] RDX: 80ffffd377c00119 RSI: b000000000000000 RDI: 04ffff8e2c44ec81
+[ 3668.170837] RBP: ffffd377c001
+** replaying previous printk message **
+[ 3668.170837] RBP: ffffd377c00138f8 R08: 0000000000000000 R09: 0000000000000000
+[ 3668.171610] R10: 0000000000000000 R11: 0000000000000000 R12: ffffd377c0013939
+[ 3668.171726] R13: ffffd377c0013b04 R14: ffffd377c00139d0 R15: ffff8e2c44ec8180
+[ 3668.172821] FS:  00007b87be8e9640(0000) GS:ffff8e2ced4f7000(0000) knlGS:0000000000000000
+[ 3668.173744] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[ 3668.173969] CR2: 00005c3940e23828 CR3: 0000000101394002 CR4: 0000000000372ef0
+[ 3668.174101] Kernel panic - not syncing: Fatal exception
+[ 3668.180799] Kernel Offset: 0xa400000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)
+[ 3668.183216] Rebooting in 10 seconds..

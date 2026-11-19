@@ -1,0 +1,1521 @@
+{
+  "time": "2026-11-16T16:49:25.021347+00:00",
+  "nodes": [
+    {
+      "node": 1,
+      "kernel": "7.0.0-43-generic",
+      "agent": {
+        "apiError": "",
+        "apiReachable": true,
+        "appliedGeneration": 3404,
+        "capabilityError": "",
+        "counters": {
+          "ct_miss": 815111,
+          "delivery_fast_seen": 429,
+          "delivery_seen": 858491,
+          "drop_acl": 0,
+          "drop_endpoint": 28,
+          "drop_mutation": 0,
+          "drop_parse": 220,
+          "drop_source": 0,
+          "redirect_requested": 815111,
+          "slow_binding": 0,
+          "slow_ct_error": 0,
+          "slow_ct_hit": 1300341,
+          "slow_disabled": 1923,
+          "slow_fib": 0,
+          "slow_l2": 0,
+          "slow_mtu": 0,
+          "slow_neigh": 0,
+          "slow_offload": 802264,
+          "slow_options_fragment": 0,
+          "slow_protocol": 1,
+          "slow_service": 220749,
+          "slow_ttl": 0,
+          "slow_unknown_peer": 10044
+        },
+        "desiredGeneration": 3404,
+        "fastCapable": true,
+        "lastAPIProbe": "2026-11-16T16:49:22.527936341Z",
+        "lastAPIVerified": "2026-11-16T16:41:27.522753736Z",
+        "lastError": "",
+        "localReady": true,
+        "mode": "vxlan-fast",
+        "paths": [
+          {
+            "id": 2169883361,
+            "ip": "10.244.1.0",
+            "ifIndex": 33,
+            "localMAC": "02:91:a3:ab:44:72",
+            "peerMAC": "02:d8:cb:82:2a:08"
+          }
+        ],
+        "policy": {
+          "rules": [],
+          "blockedUIDs": []
+        },
+        "records": {
+          "04b36c4d3c3c4afaa8c0306e3dbb5ed511e3e6a943f71fc0342defe476789073": {
+            "request": {
+              "apiVersion": "v1",
+              "key": "04b36c4d3c3c4afaa8c0306e3dbb5ed511e3e6a943f71fc0342defe476789073",
+              "containerID": "12accfa44b18a1979c16d5ba6e02e451da668d272d1a339736ecf7622b306540",
+              "configDigest": "5051003087a9ebf5adf69dcb68c549bfe6e2b773fef4a4affd505bd4264ffa95",
+              "pod": {
+                "namespace": "knd-test",
+                "name": "b",
+                "uid": "e92df2be-21e2-4f50-af86-c6832de1ed53"
+              },
+              "endpoint": {
+                "owner": "knd:v1:04b36c4d3c3c4afaa8c0306e3dbb5ed511e3e6a943f71fc0342defe476789073",
+                "ifName": "eth0",
+                "netns": "/var/run/netns/cni-9afeeae7-919e-e918-3d2b-d426dc7011b7",
+                "netnsInode": 4026532467,
+                "hostName": "kn04b36c4d3c3",
+                "hostIndex": 36,
+                "hostMAC": "e2:74:73:f9:b4:aa",
+                "podMAC": "3a:b9:ca:41:53:4b",
+                "ip": "10.244.0.100"
+              }
+            },
+            "id": 81,
+            "epoch": 81,
+            "transactionID": "bda70a2eb598a0e52e717b5d2b225803",
+            "ready": true,
+            "deleting": false
+          },
+          "8769de482499c6482beb65092bce8f13146a258142798ef15bb84494617465db": {
+            "request": {
+              "apiVersion": "v1",
+              "key": "8769de482499c6482beb65092bce8f13146a258142798ef15bb84494617465db",
+              "containerID": "bcc61386d81df8478caff3cc4589106900fe61cc663510039b221ea55de593f3",
+              "configDigest": "5051003087a9ebf5adf69dcb68c549bfe6e2b773fef4a4affd505bd4264ffa95",
+              "pod": {
+                "namespace": "kube-system",
+                "name": "coredns-577d995dff-k7c42",
+                "uid": "7572175a-e242-4fe6-8fcf-e6791d2ea952"
+              },
+              "endpoint": {
+                "owner": "knd:v1:8769de482499c6482beb65092bce8f13146a258142798ef15bb84494617465db",
+                "ifName": "eth0",
+                "netns": "/var/run/netns/cni-7071bef6-3ceb-f64a-6a7d-de6048099fda",
+                "netnsInode": 4026532333,
+                "hostName": "kn8769de48249",
+                "hostIndex": 34,
+                "hostMAC": "56:ce:3e:cb:65:d0",
+                "podMAC": "5a:1d:0c:44:fd:90",
+                "ip": "10.244.0.98"
+              }
+            },
+            "id": 79,
+            "epoch": 79,
+            "transactionID": "22c0c41fda2a4f60d8df7b8f80ae335b",
+            "ready": true,
+            "deleting": false
+          },
+          "ed660a045c18fd9f638cf21d906b87eece583a8da5d430321333fddbad632c95": {
+            "request": {
+              "apiVersion": "v1",
+              "key": "ed660a045c18fd9f638cf21d906b87eece583a8da5d430321333fddbad632c95",
+              "containerID": "6516c02d952410f3e3a9682534e37ca5d5a8a86f900a62abe5e183e4d3d5e9d6",
+              "configDigest": "5051003087a9ebf5adf69dcb68c549bfe6e2b773fef4a4affd505bd4264ffa95",
+              "pod": {
+                "namespace": "knd-test",
+                "name": "a",
+                "uid": "8800464c-124e-47e1-b30e-874ba462c402"
+              },
+              "endpoint": {
+                "owner": "knd:v1:ed660a045c18fd9f638cf21d906b87eece583a8da5d430321333fddbad632c95",
+                "ifName": "eth0",
+                "netns": "/var/run/netns/cni-606aab1e-b739-e3b7-7357-9526fe03af2d",
+                "netnsInode": 4026532405,
+                "hostName": "kned660a045c1",
+                "hostIndex": 35,
+                "hostMAC": "36:8a:7b:69:dd:25",
+                "podMAC": "f6:b1:7e:72:ab:44",
+                "ip": "10.244.0.99"
+              }
+            },
+            "id": 80,
+            "epoch": 80,
+            "transactionID": "7e0bd618eb9df31b1faaa81e7247a6fe",
+            "ready": true,
+            "deleting": false
+          }
+        },
+        "remote": [
+          {
+            "uid": "faae20c9-6814-462c-b45e-4995e96195f6",
+            "id": 15406538428593464687,
+            "epoch": 15406538428593464687,
+            "ip": "10.244.1.67",
+            "nodeID": 2169883361
+          }
+        ],
+        "routes": [
+          {
+            "cidr": "10.244.1.0/24",
+            "gateway": "10.244.1.0",
+            "ifIndex": 33,
+            "onlink": true
+          }
+        ]
+      },
+      "processes": [
+        {
+          "pid": 26645,
+          "RSS": "30284 kB",
+          "threads": "8"
+        }
+      ],
+      "bpffs": "bpf_fs",
+      "routes": [
+        {
+          "type": "blackhole",
+          "dst": "10.244.0.0/24",
+          "flags": []
+        },
+        {
+          "dst": "10.244.0.98",
+          "dev": "kn8769de48249",
+          "scope": "link",
+          "prefsrc": "192.168.77.11",
+          "flags": []
+        },
+        {
+          "dst": "10.244.0.99",
+          "dev": "kned660a045c1",
+          "scope": "link",
+          "prefsrc": "192.168.77.11",
+          "flags": []
+        },
+        {
+          "dst": "10.244.0.100",
+          "dev": "kn04b36c4d3c3",
+          "scope": "link",
+          "prefsrc": "192.168.77.11",
+          "flags": []
+        },
+        {
+          "dst": "10.244.1.0/24",
+          "gateway": "10.244.1.0",
+          "dev": "kndvx0",
+          "flags": [
+            "onlink"
+          ]
+        }
+      ],
+      "maps": [
+        {
+          "id": 28,
+          "type": "hash_of_maps",
+          "name": "cgroup_hash",
+          "flags": 0,
+          "bytes_key": 8,
+          "bytes_value": 4,
+          "max_entries": 2048,
+          "bytes_memlock": 164752,
+          "frozen": 0
+        },
+        {
+          "id": 30,
+          "type": "cgroup_array",
+          "name": "cgroup_map",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 4,
+          "max_entries": 1,
+          "bytes_memlock": 320,
+          "frozen": 0
+        },
+        {
+          "id": 31,
+          "type": "ringbuf",
+          "name": "written_sysctls",
+          "flags": 0,
+          "bytes_key": 0,
+          "bytes_value": 0,
+          "max_entries": 262144,
+          "bytes_memlock": 275784,
+          "frozen": 0
+        },
+        {
+          "id": 33,
+          "type": "array",
+          "name": ".rodata.str1.1",
+          "flags": 128,
+          "bytes_key": 4,
+          "bytes_value": 5,
+          "max_entries": 1,
+          "bytes_memlock": 320,
+          "frozen": 1
+        },
+        {
+          "id": 62,
+          "type": "hash",
+          "name": "bindings",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 64,
+          "max_entries": 256,
+          "bytes_memlock": 35968,
+          "frozen": 0,
+          "btf_id": 197
+        },
+        {
+          "id": 63,
+          "type": "array",
+          "name": "runtime_config",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 32,
+          "max_entries": 1,
+          "bytes_memlock": 344,
+          "frozen": 0,
+          "btf_id": 198
+        },
+        {
+          "id": 64,
+          "type": "percpu_array",
+          "name": "reason_counters",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 8,
+          "max_entries": 23,
+          "bytes_memlock": 864,
+          "frozen": 0,
+          "btf_id": 199
+        },
+        {
+          "id": 67,
+          "type": "array_of_maps",
+          "name": "active_snapshot",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 4,
+          "max_entries": 1,
+          "bytes_memlock": 320,
+          "frozen": 0,
+          "btf_id": 199
+        },
+        {
+          "id": 1060,
+          "type": "hash",
+          "name": "knd_snapshot",
+          "flags": 0,
+          "bytes_key": 16,
+          "bytes_value": 64,
+          "max_entries": 4096,
+          "bytes_memlock": 590992,
+          "frozen": 1,
+          "btf_id": 199
+        }
+      ],
+      "programs": [
+        {
+          "id": 49,
+          "type": "lsm",
+          "name": "restrict_filesystems",
+          "tag": "31efb7c56239148b",
+          "gpl_compatible": true,
+          "loaded_at": 1794846501,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 520,
+          "jited": true,
+          "bytes_jited": 286,
+          "bytes_memlock": 4096,
+          "map_ids": [
+            28
+          ],
+          "btf_id": 79
+        },
+        {
+          "id": 65,
+          "type": "cgroup_sysctl",
+          "name": "sysctl_monitor",
+          "tag": "2953fbb83d3292b5",
+          "gpl_compatible": true,
+          "loaded_at": 1794846503,
+          "uid": 998,
+          "orphaned": false,
+          "bytes_xlated": 1240,
+          "jited": true,
+          "bytes_jited": 781,
+          "bytes_memlock": 4096,
+          "map_ids": [
+            30,
+            33,
+            31
+          ],
+          "btf_id": 123
+        },
+        {
+          "id": 128,
+          "type": "sched_cls",
+          "name": "knd_from_network",
+          "tag": "e899763dc938a296",
+          "gpl_compatible": true,
+          "loaded_at": 1794846574,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 8584,
+          "jited": true,
+          "bytes_jited": 5008,
+          "bytes_memlock": 12288,
+          "map_ids": [
+            63,
+            64,
+            67,
+            62
+          ],
+          "btf_id": 203
+        },
+        {
+          "id": 129,
+          "type": "sched_cls",
+          "name": "knd_to_pod",
+          "tag": "1c8494f6c43d7dab",
+          "gpl_compatible": true,
+          "loaded_at": 1794846574,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 3360,
+          "jited": true,
+          "bytes_jited": 1912,
+          "bytes_memlock": 4096,
+          "map_ids": [
+            62,
+            64,
+            67
+          ],
+          "btf_id": 204
+        },
+        {
+          "id": 130,
+          "type": "sched_cls",
+          "name": "knd_from_pod",
+          "tag": "40eb4a0831a884a9",
+          "gpl_compatible": true,
+          "loaded_at": 1794846574,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 10256,
+          "jited": true,
+          "bytes_jited": 6102,
+          "bytes_memlock": 12288,
+          "map_ids": [
+            63,
+            62,
+            64,
+            67
+          ],
+          "btf_id": 205
+        },
+        {
+          "id": 341,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847033,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 346,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847033,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 364,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847166,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 369,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847166,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 374,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847167,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 379,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847167,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 393,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "ac649eea392bca3b",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 394,
+          "type": "cgroup_skb",
+          "name": "sd_fw_egress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 395,
+          "type": "cgroup_skb",
+          "name": "sd_fw_ingress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 396,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "ac649eea392bca3b",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 397,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "b04cb30861e0d078",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 744,
+          "jited": true,
+          "bytes_jited": 449,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 398,
+          "type": "cgroup_skb",
+          "name": "sd_fw_egress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 399,
+          "type": "cgroup_skb",
+          "name": "sd_fw_ingress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 400,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "ac649eea392bca3b",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 401,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "9f0126175d483e7a",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 504,
+          "jited": true,
+          "bytes_jited": 311,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 402,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "9f0126175d483e7a",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 504,
+          "jited": true,
+          "bytes_jited": 311,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 403,
+          "type": "cgroup_skb",
+          "name": "sd_fw_egress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 404,
+          "type": "cgroup_skb",
+          "name": "sd_fw_ingress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 405,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "99aee04c1c96cc7e",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 464,
+          "jited": true,
+          "bytes_jited": 290,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 406,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "ac649eea392bca3b",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 407,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "ac649eea392bca3b",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 408,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "ac649eea392bca3b",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 409,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "470479e7b2a42bb5",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 184,
+          "jited": true,
+          "bytes_jited": 103,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 410,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "925aa739a35aee81",
+          "gpl_compatible": true,
+          "loaded_at": 1794847253,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 560,
+          "jited": true,
+          "bytes_jited": 353,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 437,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "fdbddde2d88502e1",
+          "gpl_compatible": true,
+          "loaded_at": 1794847287,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 441,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847287,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 449,
+          "type": "cgroup_device",
+          "tag": "b1e4e8bab2078b38",
+          "gpl_compatible": false,
+          "loaded_at": 1794847287,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 42,
+          "bytes_memlock": 4096
+        }
+      ]
+    },
+    {
+      "node": 2,
+      "kernel": "7.0.0-43-generic",
+      "agent": {
+        "apiError": "",
+        "apiReachable": true,
+        "appliedGeneration": 3378,
+        "capabilityError": "",
+        "counters": {
+          "ct_miss": 1036878,
+          "delivery_fast_seen": 1036592,
+          "delivery_seen": 2586581,
+          "drop_acl": 0,
+          "drop_endpoint": 25,
+          "drop_mutation": 0,
+          "drop_parse": 96,
+          "drop_source": 0,
+          "redirect_requested": 1036878,
+          "slow_binding": 0,
+          "slow_ct_error": 0,
+          "slow_ct_hit": 1294366,
+          "slow_disabled": 1480,
+          "slow_fib": 0,
+          "slow_l2": 0,
+          "slow_mtu": 0,
+          "slow_neigh": 0,
+          "slow_offload": 646570,
+          "slow_options_fragment": 0,
+          "slow_protocol": 1,
+          "slow_service": 48,
+          "slow_ttl": 0,
+          "slow_unknown_peer": 3281
+        },
+        "desiredGeneration": 3378,
+        "fastCapable": true,
+        "lastAPIProbe": "2026-11-16T16:49:20.885185161Z",
+        "lastAPIVerified": "2026-11-16T16:41:11.153009464Z",
+        "lastError": "",
+        "localReady": true,
+        "mode": "vxlan-fast",
+        "paths": [
+          {
+            "id": 793700803,
+            "ip": "10.244.0.0",
+            "ifIndex": 15,
+            "localMAC": "02:d8:cb:82:2a:08",
+            "peerMAC": "02:91:a3:ab:44:72"
+          }
+        ],
+        "policy": {
+          "rules": [],
+          "blockedUIDs": []
+        },
+        "records": {
+          "04d69323e0643fd06c8cf4c6e55e15f778f43502300e257a13e848553cee6b37": {
+            "request": {
+              "apiVersion": "v1",
+              "key": "04d69323e0643fd06c8cf4c6e55e15f778f43502300e257a13e848553cee6b37",
+              "containerID": "aa71c981b93ee24047a7a86e7e61ae6b34644a9d84e66a79190034001711f3fc",
+              "configDigest": "2015a5b0de8cc03f6b0ebef820365626a756f49322dfa09baffbad8a1a7d1527",
+              "pod": {
+                "namespace": "knd-test",
+                "name": "c",
+                "uid": "faae20c9-6814-462c-b45e-4995e96195f6"
+              },
+              "endpoint": {
+                "owner": "knd:v1:04d69323e0643fd06c8cf4c6e55e15f778f43502300e257a13e848553cee6b37",
+                "ifName": "eth0",
+                "netns": "/var/run/netns/cni-cc56091d-1038-313e-5418-ca8451259290",
+                "netnsInode": 4026532333,
+                "hostName": "kn04d69323e06",
+                "hostIndex": 16,
+                "hostMAC": "be:19:24:de:a4:e7",
+                "podMAC": "26:10:91:02:17:90",
+                "ip": "10.244.1.67"
+              }
+            },
+            "id": 61,
+            "epoch": 61,
+            "transactionID": "f8a7aff057f764000e951ad205f31c71",
+            "ready": true,
+            "deleting": false
+          }
+        },
+        "remote": [
+          {
+            "uid": "8800464c-124e-47e1-b30e-874ba462c402",
+            "id": 14634921447023548135,
+            "epoch": 14634921447023548135,
+            "ip": "10.244.0.99",
+            "nodeID": 793700803
+          },
+          {
+            "uid": "e92df2be-21e2-4f50-af86-c6832de1ed53",
+            "id": 18109949982561522198,
+            "epoch": 18109949982561522198,
+            "ip": "10.244.0.100",
+            "nodeID": 793700803
+          },
+          {
+            "uid": "7572175a-e242-4fe6-8fcf-e6791d2ea952",
+            "id": 11102367860927664120,
+            "epoch": 11102367860927664120,
+            "ip": "10.244.0.98",
+            "nodeID": 793700803
+          }
+        ],
+        "routes": [
+          {
+            "cidr": "10.244.0.0/24",
+            "gateway": "10.244.0.0",
+            "ifIndex": 15,
+            "onlink": true
+          }
+        ]
+      },
+      "processes": [
+        {
+          "pid": 10877,
+          "RSS": "31148 kB",
+          "threads": "9"
+        }
+      ],
+      "bpffs": "bpf_fs",
+      "routes": [
+        {
+          "dst": "10.244.0.0/24",
+          "gateway": "10.244.0.0",
+          "dev": "kndvx0",
+          "flags": [
+            "onlink"
+          ]
+        },
+        {
+          "type": "blackhole",
+          "dst": "10.244.1.0/24",
+          "flags": []
+        },
+        {
+          "dst": "10.244.1.67",
+          "dev": "kn04d69323e06",
+          "scope": "link",
+          "prefsrc": "192.168.77.12",
+          "flags": []
+        }
+      ],
+      "maps": [
+        {
+          "id": 28,
+          "type": "hash_of_maps",
+          "name": "cgroup_hash",
+          "flags": 0,
+          "bytes_key": 8,
+          "bytes_value": 4,
+          "max_entries": 2048,
+          "bytes_memlock": 164752,
+          "frozen": 0
+        },
+        {
+          "id": 30,
+          "type": "cgroup_array",
+          "name": "cgroup_map",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 4,
+          "max_entries": 1,
+          "bytes_memlock": 320,
+          "frozen": 0
+        },
+        {
+          "id": 31,
+          "type": "ringbuf",
+          "name": "written_sysctls",
+          "flags": 0,
+          "bytes_key": 0,
+          "bytes_value": 0,
+          "max_entries": 262144,
+          "bytes_memlock": 275784,
+          "frozen": 0
+        },
+        {
+          "id": 33,
+          "type": "array",
+          "name": ".rodata.str1.1",
+          "flags": 128,
+          "bytes_key": 4,
+          "bytes_value": 5,
+          "max_entries": 1,
+          "bytes_memlock": 320,
+          "frozen": 1
+        },
+        {
+          "id": 57,
+          "type": "array_of_maps",
+          "name": "active_snapshot",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 4,
+          "max_entries": 1,
+          "bytes_memlock": 320,
+          "frozen": 0
+        },
+        {
+          "id": 58,
+          "type": "hash",
+          "name": "bindings",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 64,
+          "max_entries": 256,
+          "bytes_memlock": 35968,
+          "frozen": 0,
+          "btf_id": 188
+        },
+        {
+          "id": 59,
+          "type": "array",
+          "name": "runtime_config",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 32,
+          "max_entries": 1,
+          "bytes_memlock": 344,
+          "frozen": 0,
+          "btf_id": 189
+        },
+        {
+          "id": 60,
+          "type": "percpu_array",
+          "name": "reason_counters",
+          "flags": 0,
+          "bytes_key": 4,
+          "bytes_value": 8,
+          "max_entries": 23,
+          "bytes_memlock": 864,
+          "frozen": 0,
+          "btf_id": 190
+        },
+        {
+          "id": 1026,
+          "type": "hash",
+          "name": "knd_snapshot",
+          "flags": 0,
+          "bytes_key": 16,
+          "bytes_value": 64,
+          "max_entries": 4096,
+          "bytes_memlock": 590992,
+          "frozen": 1,
+          "btf_id": 190
+        }
+      ],
+      "programs": [
+        {
+          "id": 49,
+          "type": "lsm",
+          "name": "restrict_filesystems",
+          "tag": "31efb7c56239148b",
+          "gpl_compatible": true,
+          "loaded_at": 1794846501,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 520,
+          "jited": true,
+          "bytes_jited": 286,
+          "bytes_memlock": 4096,
+          "map_ids": [
+            28
+          ],
+          "btf_id": 79
+        },
+        {
+          "id": 65,
+          "type": "cgroup_sysctl",
+          "name": "sysctl_monitor",
+          "tag": "2953fbb83d3292b5",
+          "gpl_compatible": true,
+          "loaded_at": 1794846503,
+          "uid": 998,
+          "orphaned": false,
+          "bytes_xlated": 1240,
+          "jited": true,
+          "bytes_jited": 781,
+          "bytes_memlock": 4096,
+          "map_ids": [
+            30,
+            33,
+            31
+          ],
+          "btf_id": 123
+        },
+        {
+          "id": 115,
+          "type": "sched_cls",
+          "name": "knd_from_network",
+          "tag": "e899763dc938a296",
+          "gpl_compatible": true,
+          "loaded_at": 1794846574,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 8584,
+          "jited": true,
+          "bytes_jited": 5008,
+          "bytes_memlock": 12288,
+          "map_ids": [
+            59,
+            60,
+            57,
+            58
+          ],
+          "btf_id": 191
+        },
+        {
+          "id": 116,
+          "type": "sched_cls",
+          "name": "knd_to_pod",
+          "tag": "1c8494f6c43d7dab",
+          "gpl_compatible": true,
+          "loaded_at": 1794846574,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 3360,
+          "jited": true,
+          "bytes_jited": 1912,
+          "bytes_memlock": 4096,
+          "map_ids": [
+            58,
+            60,
+            57
+          ],
+          "btf_id": 192
+        },
+        {
+          "id": 117,
+          "type": "sched_cls",
+          "name": "knd_from_pod",
+          "tag": "40eb4a0831a884a9",
+          "gpl_compatible": true,
+          "loaded_at": 1794846574,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 10256,
+          "jited": true,
+          "bytes_jited": 6102,
+          "bytes_memlock": 12288,
+          "map_ids": [
+            59,
+            58,
+            60,
+            57
+          ],
+          "btf_id": 193
+        },
+        {
+          "id": 288,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847167,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 293,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847167,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 320,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "b04cb30861e0d078",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 744,
+          "jited": true,
+          "bytes_jited": 449,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 321,
+          "type": "cgroup_skb",
+          "name": "sd_fw_egress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 322,
+          "type": "cgroup_skb",
+          "name": "sd_fw_ingress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 323,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "925aa739a35aee81",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 560,
+          "jited": true,
+          "bytes_jited": 353,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 324,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "9f0126175d483e7a",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 504,
+          "jited": true,
+          "bytes_jited": 311,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 325,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "470479e7b2a42bb5",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 184,
+          "jited": true,
+          "bytes_jited": 103,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 326,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "99aee04c1c96cc7e",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 464,
+          "jited": true,
+          "bytes_jited": 290,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 327,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "ac649eea392bca3b",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 328,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "9f0126175d483e7a",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 504,
+          "jited": true,
+          "bytes_jited": 311,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 329,
+          "type": "cgroup_skb",
+          "name": "sd_fw_egress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 330,
+          "type": "cgroup_skb",
+          "name": "sd_fw_ingress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 331,
+          "type": "cgroup_skb",
+          "name": "sd_fw_egress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 332,
+          "type": "cgroup_skb",
+          "name": "sd_fw_ingress",
+          "tag": "772db7720b2728e9",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 56,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 333,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "ac649eea392bca3b",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 334,
+          "type": "cgroup_device",
+          "name": "sd_devices",
+          "tag": "fdbddde2d88502e1",
+          "gpl_compatible": true,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 440,
+          "jited": true,
+          "bytes_jited": 273,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 338,
+          "type": "cgroup_device",
+          "tag": "b2c0b2c5432dcbd0",
+          "gpl_compatible": false,
+          "loaded_at": 1794847254,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 512,
+          "jited": true,
+          "bytes_jited": 330,
+          "bytes_memlock": 4096
+        },
+        {
+          "id": 346,
+          "type": "cgroup_device",
+          "tag": "b1e4e8bab2078b38",
+          "gpl_compatible": false,
+          "loaded_at": 1794847255,
+          "uid": 0,
+          "orphaned": false,
+          "bytes_xlated": 64,
+          "jited": true,
+          "bytes_jited": 42,
+          "bytes_memlock": 4096
+        }
+      ]
+    }
+  ],
+  "pods": [
+    {
+      "namespace": "knd-system",
+      "name": "knd-agent-sslnx",
+      "node": "knd-node2",
+      "phase": "Running",
+      "IP": "192.168.77.12",
+      "containers": [
+        {
+          "name": "agent",
+          "ready": true,
+          "imageID": "sha256:b32cc6bbb6105a865aaa9a5097d33d3bf1d1fb3a428296430d13ddebd5ca95d8",
+          "restarts": 0
+        }
+      ]
+    },
+    {
+      "namespace": "knd-system",
+      "name": "knd-agent-zbhwz",
+      "node": "knd-node1",
+      "phase": "Running",
+      "IP": "192.168.77.11",
+      "containers": [
+        {
+          "name": "agent",
+          "ready": true,
+          "imageID": "sha256:b32cc6bbb6105a865aaa9a5097d33d3bf1d1fb3a428296430d13ddebd5ca95d8",
+          "restarts": 0
+        }
+      ]
+    },
+    {
+      "namespace": "knd-test",
+      "name": "a",
+      "node": "knd-node1",
+      "phase": "Running",
+      "IP": "10.244.0.99",
+      "containers": [
+        {
+          "name": "tools",
+          "ready": true,
+          "imageID": "sha256:289227ea80d976e6f2c4556c013b4f50fe490191d5ab0d15aa2a910048fcb480",
+          "restarts": 0
+        }
+      ]
+    },
+    {
+      "namespace": "knd-test",
+      "name": "b",
+      "node": "knd-node1",
+      "phase": "Running",
+      "IP": "10.244.0.100",
+      "containers": [
+        {
+          "name": "tools",
+          "ready": true,
+          "imageID": "sha256:289227ea80d976e6f2c4556c013b4f50fe490191d5ab0d15aa2a910048fcb480",
+          "restarts": 0
+        }
+      ]
+    },
+    {
+      "namespace": "knd-test",
+      "name": "c",
+      "node": "knd-node2",
+      "phase": "Running",
+      "IP": "10.244.1.67",
+      "containers": [
+        {
+          "name": "tools",
+          "ready": true,
+          "imageID": "sha256:289227ea80d976e6f2c4556c013b4f50fe490191d5ab0d15aa2a910048fcb480",
+          "restarts": 0
+        }
+      ]
+    },
+    {
+      "namespace": "kube-system",
+      "name": "coredns-577d995dff-k7c42",
+      "node": "knd-node1",
+      "phase": "Running",
+      "IP": "10.244.0.98",
+      "containers": [
+        {
+          "name": "coredns",
+          "ready": true,
+          "imageID": "docker.io/rancher/mirrored-coredns-coredns@sha256:7efd3c635b03efd68c4e8398fc45f0d993d0e9ab016f72c1cefb0fd6d01aa286",
+          "restarts": 0
+        }
+      ]
+    },
+    {
+      "namespace": "kube-system",
+      "name": "helm-install-gateway-api-crd-29z98",
+      "node": "knd-node1",
+      "phase": "Succeeded",
+      "IP": null,
+      "containers": [
+        {
+          "name": "helm",
+          "ready": false,
+          "imageID": "docker.io/rancher/klipper-helm@sha256:391ec9f4824d631c49b52c1e3d10e4a2ced37a784afd75852e34bb2a6c7309b1",
+          "restarts": 0
+        }
+      ]
+    }
+  ],
+  "daemonset": {
+    "currentNumberScheduled": 2,
+    "desiredNumberScheduled": 2,
+    "numberAvailable": 2,
+    "numberMisscheduled": 0,
+    "numberReady": 2,
+    "observedGeneration": 1,
+    "updatedNumberScheduled": 2
+  },
+  "status": "passed"
+}

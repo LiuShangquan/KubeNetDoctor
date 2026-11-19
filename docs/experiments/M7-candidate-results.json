@@ -1,0 +1,128 @@
+{
+  "time": "2026-11-16T16:18:18.002622+00:00",
+  "checks": {
+    "udp_redirect_ttl_mac": {
+      "status": "passed",
+      "detail": [
+        {
+          "ttl": 63,
+          "source": "10.244.1.2",
+          "destination": "10.244.1.3",
+          "dstMAC": "26:6d:77:f7:75:9f",
+          "srcMAC": "ba:fd:0a:a9:9d:54",
+          "checksumValid": true
+        },
+        {
+          "ttl": 63,
+          "source": "10.244.1.3",
+          "destination": "10.244.1.2",
+          "dstMAC": "3a:44:e6:aa:b0:30",
+          "srcMAC": "c6:28:fe:9f:71:e1",
+          "checksumValid": true
+        }
+      ]
+    },
+    "redirect_target_epoch_gate": {
+      "status": "passed",
+      "detail": "fast redirect rejected at target when expected epoch differs; removal restores delivery"
+    },
+    "icmp_linux_fallback": {
+      "status": "passed",
+      "detail": "ICMP follows Linux; no redirect"
+    },
+    "invalid_source_and_headers": {
+      "status": "passed",
+      "detail": "spoofed source, bad checksum/UDP/TCP rejected; TTL=1 falls back unmodified"
+    },
+    "options_no_double_ttl": {
+      "status": "passed",
+      "detail": {
+        "ttl": 63,
+        "source": "10.244.1.2",
+        "destination": "10.244.1.3",
+        "dstMAC": "26:6d:77:f7:75:9f",
+        "srcMAC": "ba:fd:0a:a9:9d:54",
+        "checksumValid": true
+      }
+    },
+    "neighbor_fallback": {
+      "status": "passed",
+      "detail": {
+        "ttl": 63,
+        "source": "10.244.1.2",
+        "destination": "10.244.1.3",
+        "dstMAC": "26:6d:77:f7:75:9f",
+        "srcMAC": "ba:fd:0a:a9:9d:54",
+        "checksumValid": true
+      }
+    },
+    "real_udp_tcp_control": {
+      "status": "passed",
+      "detail": "iperf3 UDP plus TCP control succeeds"
+    },
+    "dnat_tcp_udp": {
+      "status": "passed",
+      "detail": {
+        "tcp": {
+          "destination": "10.96.0.100",
+          "udp": false,
+          "reverse": true,
+          "success": true
+        },
+        "udp": {
+          "destination": "10.96.0.100",
+          "udp": true,
+          "reverse": false,
+          "success": true
+        }
+      }
+    },
+    "hairpin_snat_dnat": {
+      "status": "passed",
+      "detail": {
+        "destination": "10.96.0.101",
+        "udp": false,
+        "reverse": false,
+        "success": true
+      }
+    },
+    "invalid_snapshot_preserves_live": {
+      "status": "passed",
+      "detail": "duplicate endpoint rejected before map mutation"
+    },
+    "target_endpoint_gate": {
+      "status": "passed",
+      "detail": "blocked target cannot be delivered through Linux fallback; restored after publish"
+    },
+    "cleanup": {
+      "status": "passed",
+      "detail": "all CNI leases, test processes, netns and bpffs cleaned"
+    }
+  },
+  "final_counters": {
+    "ct_miss": 527,
+    "delivery_fast_seen": 525,
+    "delivery_seen": 510863,
+    "drop_acl": 0,
+    "drop_endpoint": 2,
+    "drop_mutation": 0,
+    "drop_parse": 26,
+    "drop_source": 2,
+    "redirect_requested": 526,
+    "slow_binding": 1,
+    "slow_ct_error": 0,
+    "slow_ct_hit": 83619,
+    "slow_disabled": 0,
+    "slow_fib": 0,
+    "slow_l2": 0,
+    "slow_mtu": 0,
+    "slow_neigh": 1,
+    "slow_offload": 99947,
+    "slow_options_fragment": 1,
+    "slow_protocol": 13,
+    "slow_service": 251317,
+    "slow_ttl": 1,
+    "slow_unknown_peer": 75441
+  },
+  "status": "passed"
+}

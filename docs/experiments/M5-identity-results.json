@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "ownership_drift_blocks_before_repair": {
+      "status": "passed",
+      "detail": {
+        "lastError": "registered interface ownership changed; old binding blocked and verified",
+        "targetIP": "10.244.0.67"
+      }
+    },
+    "IP_reuse_new_UID_new_epoch": {
+      "status": "passed",
+      "detail": {
+        "IP": "10.244.0.67",
+        "oldID": 66,
+        "newID": 67,
+        "oldUIDBlocked": true,
+        "replacementReachable": true
+      }
+    }
+  },
+  "status": "passed"
+}

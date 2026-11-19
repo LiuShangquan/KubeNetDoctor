@@ -1,0 +1,51 @@
+{
+  "time": "2026-11-16T15:55:27.339138+00:00",
+  "checks": {
+    "missing_kfunc_baseline": {
+      "status": "passed",
+      "detail": {
+        "configuration": {
+          "abi": 2,
+          "fast_ready": 0,
+          "mode": 0,
+          "ingress_ifindex": 0,
+          "service_network": 24586,
+          "service_mask": 61695,
+          "mtu": 1450,
+          "features": 0
+        },
+        "counters": {
+          "ct_miss": 0,
+          "delivery_fast_seen": 0,
+          "delivery_seen": 259749,
+          "drop_acl": 0,
+          "drop_endpoint": 0,
+          "drop_mutation": 0,
+          "drop_parse": 20,
+          "drop_source": 1,
+          "redirect_requested": 0,
+          "slow_binding": 0,
+          "slow_ct_error": 0,
+          "slow_ct_hit": 0,
+          "slow_disabled": 259749,
+          "slow_fib": 0,
+          "slow_l2": 0,
+          "slow_mtu": 0,
+          "slow_neigh": 0,
+          "slow_offload": 0,
+          "slow_options_fragment": 0,
+          "slow_protocol": 0,
+          "slow_service": 0,
+          "slow_ttl": 0,
+          "slow_unknown_peer": 0
+        },
+        "traffic": "PodIP UDP/TCP control, VIP TCP reverse and UDP passed; source gate retained"
+      }
+    },
+    "cleanup": {
+      "status": "passed",
+      "detail": "all isolated resources removed"
+    }
+  },
+  "status": "passed"
+}

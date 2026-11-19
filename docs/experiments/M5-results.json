@@ -1,0 +1,65 @@
+{
+  "time": "2026-11-16T16:04:48.598886+00:00",
+  "checks": {
+    "ACL_local_direct_and_DNAT_target": {
+      "status": "passed",
+      "detail": {
+        "TCP": "direct PodIP and ClusterIP blocked",
+        "UDP": "ClusterIP blocked",
+        "unrelatedRemote": "allowed",
+        "dropDelta": 3
+      }
+    },
+    "ACL_fragment_and_invalid_update": {
+      "status": "passed",
+      "detail": "noninitial fragment denied; unsupported update rejected and live policy retained"
+    },
+    "endpoint_block_fast_and_kernel_source": {
+      "status": "passed",
+      "detail": "UID block acknowledged after map readback; Pod and host traffic denied; unblocking restores traffic"
+    },
+    "ACL_remote_receiver": {
+      "status": "passed",
+      "detail": "target node denies TCP and fresh UDP tuple independently of source policy"
+    },
+    "offline_DEL_tombstone_reaped": {
+      "status": "passed",
+      "detail": "runtime DEL frees owned veth and IPAM while Agent is stopped; restart removes detached journal"
+    },
+    "100_runtime_lifecycles_no_leak": {
+      "status": "passed",
+      "detail": {
+        "pods": 100,
+        "batch": 10,
+        "finalInventory": {
+          "1": {
+            "leases": [
+              "10.244.0.10",
+              "10.244.0.11",
+              "10.244.0.9"
+            ],
+            "journals": 3,
+            "veth": [
+              "kn4f8b9ef856f",
+              "kna868c655310",
+              "knd-gw",
+              "knfe4dc8975ad"
+            ]
+          },
+          "2": {
+            "leases": [
+              "10.244.1.4"
+            ],
+            "journals": 1,
+            "veth": [
+              "knc014549c8f2",
+              "knd-gw"
+            ]
+          }
+        },
+        "uniqueUIDs": 100
+      }
+    }
+  },
+  "status": "passed"
+}

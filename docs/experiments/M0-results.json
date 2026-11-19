@@ -1,0 +1,92 @@
+{
+  "time": "2026-11-16T14:59:16.553650+00:00",
+  "status": "passed",
+  "checks": {
+    "redirect_ttl": {
+      "status": "passed",
+      "detail": {
+        "redirect_requested": 12,
+        "delivery_seen": 22,
+        "ct_miss": 0,
+        "ct_original": 0,
+        "ct_reply": 0,
+        "ct_error": 0,
+        "slow_other": 9,
+        "delivery_drop": 0,
+        "mutation_error": 0
+      }
+    },
+    "redirect_target_egress": {
+      "status": "passed",
+      "detail": "redirected packets blocked at target egress and restored"
+    },
+    "direct_udp_tcp_control": {
+      "status": "passed",
+      "detail": {
+        "destination": "10.244.1.3",
+        "udp": true,
+        "reverse": false,
+        "success": true
+      }
+    },
+    "dnat_tcp_udp_reply": {
+      "status": "passed",
+      "detail": {
+        "tcp": {
+          "destination": "10.96.0.100",
+          "udp": false,
+          "reverse": true,
+          "success": true
+        },
+        "udp": {
+          "destination": "10.96.0.100",
+          "udp": true,
+          "reverse": false,
+          "success": true
+        },
+        "stats": {
+          "redirect_requested": 534,
+          "delivery_seen": 216596,
+          "ct_miss": 522,
+          "ct_original": 58282,
+          "ct_reply": 51365,
+          "ct_error": 0,
+          "slow_other": 106417,
+          "delivery_drop": 3,
+          "mutation_error": 0
+        }
+      }
+    },
+    "hairpin_snat_dnat": {
+      "status": "passed",
+      "detail": {
+        "destination": "10.96.0.101",
+        "udp": false,
+        "reverse": false,
+        "success": true
+      }
+    },
+    "missing_ct_guard_negative_control": {
+      "status": "passed",
+      "detail": {
+        "destination": "10.96.0.100",
+        "udp": false,
+        "reverse": false,
+        "success": false
+      }
+    },
+    "ct_error_kernel_fallback": {
+      "status": "passed",
+      "detail": {
+        "destination": "10.244.1.3",
+        "udp": false,
+        "reverse": false,
+        "success": true
+      }
+    },
+    "cleanup": {
+      "status": "passed",
+      "detail": "all owned namespaces, processes and bpffs removed"
+    }
+  }
+}

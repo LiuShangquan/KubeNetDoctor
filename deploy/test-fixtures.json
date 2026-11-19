@@ -1,0 +1,228 @@
+{
+  "apiVersion": "v1",
+  "kind": "List",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "a",
+        "namespace": "knd-test",
+        "labels": {
+          "knd-case": "a"
+        }
+      },
+      "spec": {
+        "nodeName": "knd-node1",
+        "terminationGracePeriodSeconds": 2,
+        "containers": [
+          {
+            "name": "tools",
+            "image": "docker.io/library/knd-test:v0.1",
+            "imagePullPolicy": "Never",
+            "command": [
+              "sh",
+              "-ec",
+              "mkdir -p /www; hostname > /www/index.html; python3 -m http.server 8080 --directory /www & socat UDP4-RECVFROM:8081,reuseaddr,fork EXEC:/bin/cat & iperf3 -s -p 5201 > /tmp/iperf.log 2>&1 & wait"
+            ],
+            "readinessProbe": {
+              "httpGet": {
+                "path": "/",
+                "port": 8080
+              },
+              "initialDelaySeconds": 1,
+              "periodSeconds": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "b",
+        "namespace": "knd-test",
+        "labels": {
+          "knd-case": "b"
+        }
+      },
+      "spec": {
+        "nodeName": "knd-node1",
+        "terminationGracePeriodSeconds": 2,
+        "containers": [
+          {
+            "name": "tools",
+            "image": "docker.io/library/knd-test:v0.1",
+            "imagePullPolicy": "Never",
+            "command": [
+              "sh",
+              "-ec",
+              "mkdir -p /www; hostname > /www/index.html; python3 -m http.server 8080 --directory /www & socat UDP4-RECVFROM:8081,reuseaddr,fork EXEC:/bin/cat & iperf3 -s -p 5201 > /tmp/iperf.log 2>&1 & wait"
+            ],
+            "readinessProbe": {
+              "httpGet": {
+                "path": "/",
+                "port": 8080
+              },
+              "initialDelaySeconds": 1,
+              "periodSeconds": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Pod",
+      "metadata": {
+        "name": "c",
+        "namespace": "knd-test",
+        "labels": {
+          "knd-case": "c"
+        }
+      },
+      "spec": {
+        "nodeName": "knd-node2",
+        "terminationGracePeriodSeconds": 2,
+        "containers": [
+          {
+            "name": "tools",
+            "image": "docker.io/library/knd-test:v0.1",
+            "imagePullPolicy": "Never",
+            "command": [
+              "sh",
+              "-ec",
+              "mkdir -p /www; hostname > /www/index.html; python3 -m http.server 8080 --directory /www & socat UDP4-RECVFROM:8081,reuseaddr,fork EXEC:/bin/cat & iperf3 -s -p 5201 > /tmp/iperf.log 2>&1 & wait"
+            ],
+            "readinessProbe": {
+              "httpGet": {
+                "path": "/",
+                "port": 8080
+              },
+              "initialDelaySeconds": 1,
+              "periodSeconds": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Service",
+      "metadata": {
+        "name": "local",
+        "namespace": "knd-test"
+      },
+      "spec": {
+        "selector": {
+          "knd-case": "b"
+        },
+        "ports": [
+          {
+            "name": "http",
+            "port": 8080,
+            "targetPort": 8080,
+            "protocol": "TCP"
+          },
+          {
+            "name": "echo",
+            "port": 8081,
+            "targetPort": 8081,
+            "protocol": "UDP"
+          },
+          {
+            "name": "perf-tcp",
+            "port": 5201,
+            "targetPort": 5201,
+            "protocol": "TCP"
+          },
+          {
+            "name": "perf-udp",
+            "port": 5201,
+            "targetPort": 5201,
+            "protocol": "UDP"
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Service",
+      "metadata": {
+        "name": "remote",
+        "namespace": "knd-test"
+      },
+      "spec": {
+        "selector": {
+          "knd-case": "c"
+        },
+        "ports": [
+          {
+            "name": "http",
+            "port": 8080,
+            "targetPort": 8080,
+            "protocol": "TCP"
+          },
+          {
+            "name": "echo",
+            "port": 8081,
+            "targetPort": 8081,
+            "protocol": "UDP"
+          },
+          {
+            "name": "perf-tcp",
+            "port": 5201,
+            "targetPort": 5201,
+            "protocol": "TCP"
+          },
+          {
+            "name": "perf-udp",
+            "port": 5201,
+            "targetPort": 5201,
+            "protocol": "UDP"
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Service",
+      "metadata": {
+        "name": "hairpin",
+        "namespace": "knd-test"
+      },
+      "spec": {
+        "selector": {
+          "knd-case": "a"
+        },
+        "ports": [
+          {
+            "name": "http",
+            "port": 8080,
+            "targetPort": 8080,
+            "protocol": "TCP"
+          },
+          {
+            "name": "echo",
+            "port": 8081,
+            "targetPort": 8081,
+            "protocol": "UDP"
+          },
+          {
+            "name": "perf-tcp",
+            "port": 5201,
+            "targetPort": 5201,
+            "protocol": "TCP"
+          },
+          {
+            "name": "perf-udp",
+            "port": 5201,
+            "targetPort": 5201,
+            "protocol": "UDP"
+          }
+        ]
+      }
+    }
+  ]
+}

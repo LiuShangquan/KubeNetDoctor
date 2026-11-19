@@ -1,0 +1,30 @@
+{
+  "mode": "vxlan-fast",
+  "checks": {
+    "VXLAN_outer_and_inner_capture": {
+      "status": "passed",
+      "detail": {
+        "outer": [
+          "192.168.77.11",
+          "192.168.77.12"
+        ],
+        "UDP": 4789,
+        "VNI": 42,
+        "inner": [
+          "10.244.0.69",
+          "10.244.1.56"
+        ]
+      }
+    },
+    "VXLAN_MTU_boundary": {
+      "status": "passed",
+      "detail": {
+        "underlay": 1500,
+        "Pod": 1450,
+        "IP1450": "success",
+        "IP1451": "local rejection"
+      }
+    }
+  },
+  "status": "passed"
+}

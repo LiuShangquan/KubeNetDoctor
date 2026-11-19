@@ -1,0 +1,51 @@
+{
+  "time": "2026-11-16T15:13:46.939948+00:00",
+  "checks": {
+    "add_check_connectivity": {
+      "status": "passed",
+      "detail": {
+        "a": "10.244.7.2",
+        "b": "10.244.7.3",
+        "prefix": 32,
+        "ttl": 63
+      }
+    },
+    "check_detects_drift": {
+      "status": "passed",
+      "detail": "MTU drift rejected without silent repair"
+    },
+    "concurrent_add_del": {
+      "status": "passed",
+      "detail": "8 parallel ADD; unique leases; repeated DEL clean"
+    },
+    "rollback": {
+      "status": "passed",
+      "detail": "failures after allocation, link creation and readiness cleaned"
+    },
+    "sigkill_then_del": {
+      "status": "passed",
+      "detail": "durable journal recovers allocation, unmarked host veth, links and ready crashes"
+    },
+    "retry_incomplete_add": {
+      "status": "passed",
+      "detail": "incomplete links rolled back before a fresh successful ADD"
+    },
+    "netns_gone_del": {
+      "status": "passed",
+      "detail": "DEL succeeds after runtime removes namespace"
+    },
+    "ownership_collision": {
+      "status": "passed",
+      "detail": "foreign interface preserved; cleanup completed after conflict removal"
+    },
+    "final_resources": {
+      "status": "passed",
+      "detail": "0 attachment journals; 0 Pod address leases; shared gateway intentionally retained"
+    },
+    "cleanup": {
+      "status": "passed",
+      "detail": "all experiment namespaces and temporary state removed"
+    }
+  },
+  "status": "passed"
+}

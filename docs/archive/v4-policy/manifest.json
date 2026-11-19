@@ -1,0 +1,50 @@
+[
+  {
+    "path": "\u8bbe\u8ba1\u65b9\u6848.md",
+    "sha256": "6ce73ca9df3100518d84c4b047e83e21390fd3facf7b105decee93b98b08ccab"
+  },
+  {
+    "path": "docs/architecture.md",
+    "sha256": "a9979b6e0ed0de96bbee1220f4b7c0764938b27f6f27320d55c55c5ffab63162"
+  },
+  {
+    "path": "docs/datapath-and-policy.md",
+    "sha256": "8c5259bd4be77b26dc282d427c560a872c9c2209aa28177a70af06db07c9c911"
+  },
+  {
+    "path": "docs/development-plan.md",
+    "sha256": "afd82a1cef42b592212e796902de3b0bb76ef4451af8209ea964796e64049653"
+  },
+  {
+    "path": "docs/jd-alignment.md",
+    "sha256": "a08a1d0f4ff9ea7eb032d26e729fd89c6d8578fdda11d433c9cb442f4b038964"
+  },
+  {
+    "path": "docs/known-limitations.md",
+    "sha256": "9bfeff4d9fec708fac2c8ae5171c8f5e4ed1a96464c60785d3ea803e5ea221a6"
+  },
+  {
+    "path": "docs/network-topology.md",
+    "sha256": "067c72f09d803a5ee51465c2f2ef9ceb62b2df0ec2abf145a780de3982a5d006"
+  },
+  {
+    "path": "docs/technical-decisions.md",
+    "sha256": "dcaf7e4f906d930aca2eac0f7906f3dbc230ad98771c7c8ee42deb55aa9b460d"
+  },
+  {
+    "path": "docs/testing.md",
+    "sha256": "e7bf4c5714afb3de13a34ae6a0fa3f6520c49c07ccba5f9cf8d17689a34b0bad"
+  },
+  {
+    "path": "docs/archive/\u8bbe\u8ba1\u65b9\u6848_v1_\u8bca\u65ad\u65b9\u5411.md",
+    "sha256": "5818d0c4c4f681b9949aa7563bea55743cae91b051624230906580d42488b8c4"
+  },
+  {
+    "path": "docs/archive/\u8bbe\u8ba1\u65b9\u6848_v2_\u7f51\u7edc\u72b6\u6001\u4e0e\u8bca\u65ad.md",
+    "sha256": "7488bfe7a1c89d28e43f04a29ba2676b3596d4767ff387b69f19074d5639f5b7"
+  },
+  {
+    "path": "docs/archive/\u8bbe\u8ba1\u65b9\u6848_v3_CNI\u4e0e\u7b56\u7565\u6570\u636e\u9762.md",
+    "sha256": "e1d24ffdb6e2b2caed4de50a4f09b82d4ba1592e5148f3797d4749de3830bb32"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "API_outage_retains_dataplane_rejects_prepare": {
+      "status": "passed",
+      "detail": {
+        "apiReachable": false,
+        "existingPodIP": "passed",
+        "freshUIDVerification": "HTTP 409; no attachment mutation"
+      }
+    }
+  },
+  "status": "passed"
+}
